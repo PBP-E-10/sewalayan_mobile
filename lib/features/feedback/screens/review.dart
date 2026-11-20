@@ -27,7 +27,7 @@ class ReviewPage extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.only(top: 16.0),
                     child: Text(
-                      'Ini halaman Ulasan!',
+                      'Ini halaman Review!',
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
                     ),
                   ),

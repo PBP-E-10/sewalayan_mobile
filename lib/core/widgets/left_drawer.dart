@@ -3,8 +3,8 @@ import 'package:sewalayan_mobile/home.dart';
 import 'package:sewalayan_mobile/features/order/screens/order.dart';
 import 'package:sewalayan_mobile/features/items/screens/item.dart';
 import 'package:sewalayan_mobile/features/profile/screens/profile.dart';
-import 'package:sewalayan_mobile/features/review/screens/review.dart';
-import 'package:sewalayan_mobile/features/review/screens/report.dart';
+import 'package:sewalayan_mobile/features/feedback/screens/review.dart';
+import 'package:sewalayan_mobile/features/feedback/screens/report.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -73,7 +73,7 @@ class LeftDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.star_outline),
-            title: const Text('Ulasan'),
+            title: const Text('Review'),
             onTap: () {
               Navigator.pushReplacement(
                 context,
@@ -83,7 +83,7 @@ class LeftDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.flag_outlined),
-            title: const Text('Laporan Saya'),
+            title: const Text('Report'),
             onTap: () {
               Navigator.pushReplacement(
                 context,

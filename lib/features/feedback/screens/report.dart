@@ -27,7 +27,7 @@ class ReportPage extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.only(top: 16.0),
                     child: Text(
-                      'Ini halaman Laporan Saya!',
+                      'Ini halaman Report!',
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
                     ),
                   ),
