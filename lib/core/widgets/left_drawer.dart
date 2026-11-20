@@ -1,6 +1,7 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:sewalayan_mobile/home.dart';
 import 'package:sewalayan_mobile/features/order/screens/order.dart';
+import 'package:sewalayan_mobile/features/items/screens/item.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -44,6 +45,16 @@ class LeftDrawer extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => OrderPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.inventory_2_outlined),
+            title: const Text('Item'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const ItemPage()),
               );
             },
           ),
