@@ -15,17 +15,12 @@ class LeftDrawer extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'My Portfolio',
+                  'Sewalayan',
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'Explore personal projects and experiences!',
-                  style: TextStyle(fontSize: 15, color: Colors.white),
                 ),
               ],
             ),
@@ -33,7 +28,7 @@ class LeftDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.home_outlined),
             title: const Text('Home'),
-            // Navigasi ke halaman utama portofolio
+            // Navigasi ke halaman utama
             onTap: () {
               Navigator.pushReplacement(
                 context,
