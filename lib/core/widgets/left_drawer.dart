@@ -2,6 +2,7 @@ import 'package:material_ui/material_ui.dart';
 import 'package:sewalayan_mobile/home.dart';
 import 'package:sewalayan_mobile/features/order/screens/order.dart';
 import 'package:sewalayan_mobile/features/items/screens/item.dart';
+import 'package:sewalayan_mobile/features/profile/screens/profile.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -55,6 +56,16 @@ class LeftDrawer extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => const ItemPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.person_outline),
+            title: const Text('Profile'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const ProfilePage()),
               );
             },
           ),
